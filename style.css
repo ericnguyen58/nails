@@ -1,0 +1,45 @@
+/* General styling for headings */
+h1 {
+    text-align: center;
+    font-family: Playwrite België Vlaams Gewest;
+    color: #333333;
+}
+
+/* Styling for the services list */
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.service-container h3 {
+    margin: 0;
+    font-family: Playwrite België Vlaams Gewest;
+}
+
+.service-duration {
+    color: gray;
+    font-size: 14px;
+    font-family: Playwrite België Vlaams Gewest;
+    margin-top: 5px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 10px 0;
+}
+div.stTabs div[data-baseweb="tab-list"] {
+    font-size: bold;
+    display: flex;
+    justify-content: space-between; /* Justify tabs */
+}
+
+div.stTabs button {
+    flex-grow: 1; /* Equal spacing for each tab */
+    text-align: center; /* Center-align text within each tab */
+    font-size: 32px; /* Bigger text size for tab labels */
+    font-family: Playwrite België Vlaams Gewest;
+}
