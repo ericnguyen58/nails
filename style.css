@@ -2,7 +2,7 @@
 h1 {
     text-align: center;
     font-family: Playwrite België Vlaams Gewest;
-    color: #333333;
+    color: #053c28;
 }
 
 /* Styling for the services list */
@@ -15,6 +15,13 @@ h1 {
 
 .service-container h3 {
     margin: 0;
+    color: #053c28;
+    font-family: Playwrite België Vlaams Gewest;
+}
+.service-container h2 {
+    margin: 0;
+    color: #053c28;
+    align-self: center;
     font-family: Playwrite België Vlaams Gewest;
 }
 
@@ -28,18 +35,35 @@ h1 {
 hr {
     border: 0;
     height: 1px;
-    background: #e0e0e0;
+    background: #e5e5e5;
     margin: 10px 0;
 }
 div.stTabs div[data-baseweb="tab-list"] {
     font-size: bold;
     display: flex;
+    font-size: 32px;
     justify-content: space-between; /* Justify tabs */
 }
 
 div.stTabs button {
+    color: #6A8481;
     flex-grow: 1; /* Equal spacing for each tab */
     text-align: center; /* Center-align text within each tab */
     font-size: 32px; /* Bigger text size for tab labels */
     font-family: Playwrite België Vlaams Gewest;
 }
+
+
+/* Welcome Box */
+.box {
+    border: 2px solid #F5F4FA; /* Adds a border */
+    color: #1E2035; 
+    padding: 20px;          /* Adds space inside the box */
+    margin-bottom: 20px;    /* Adds space below the box */
+    text-align: center;     /* Centers the text */
+    background-color: #F5F4FA; /* Optional: Light background color */
+    border-radius: 10px;    /* Rounds the corners */
+  }
+  
+
+  
