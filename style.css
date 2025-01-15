@@ -9,6 +9,11 @@ h5 {
     font-family: Playwrite België Vlaams Gewest;
     color: #ffffff;
 }
+h2 {
+    text-align: center;
+    font-family: Playwrite België Vlaams Gewest;
+    color: #053c28;
+}
 
 /* Styling for the services list */
 .service-container {

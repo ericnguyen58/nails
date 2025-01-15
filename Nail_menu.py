@@ -166,7 +166,7 @@ drinks = {
 
 def display_drinks():
     for category, items in drinks.items():
-        st.write(f'<h3 class="box">{category}</h3>', unsafe_allow_html=True)
+        st.write(f'<h2 class="box">{category}</h2>', unsafe_allow_html=True)
         for item in items:
             st.write("<hr>", unsafe_allow_html=True)
             st.write(f"""
@@ -174,7 +174,7 @@ def display_drinks():
                     <h3>{item}</h3>
                 </div>
             """, unsafe_allow_html=True)
-            
+    st.write("<hr>", unsafe_allow_html=True)        
     st.write("<h5 class = 'drink'>*Alcohol must be use responsibly*</h5>", unsafe_allow_html=True)        
             
             
