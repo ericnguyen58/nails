@@ -90,7 +90,7 @@ all_services = {
 #`---Manicure---` and `---Pedicure---`
 def basic():
     for sub_service, enhance in all_services['Mani & Pedi'].items():
-        st.write(f'<h2 color=#a90000>{sub_service}</h2>', unsafe_allow_html=True)
+        st.write(f'<h2 style="color:#a90000;">{sub_service}</h2>', unsafe_allow_html=True)
         for service, detail in enhance.items():
             st.write("<hr>", unsafe_allow_html=True)
             st.write(f"""
