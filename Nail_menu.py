@@ -1,6 +1,7 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 
+
 def style(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
@@ -85,6 +86,8 @@ all_services = {
                     }
     }
     }   
+
+
 #`---Manicure---` and `---Pedicure---`
 def basic():
     for sub_service, enhance in all_services['Mani & Pedi'].items():
@@ -156,18 +159,26 @@ def waxing():
             """, unsafe_allow_html=True)
             st.write("<hr>", unsafe_allow_html=True)
 
-def option_menus():
-    with st.sidebar:
-        selected = option_menu(menu_title=None,
-                               options= ['Services', 'Drinks'],
-                               icons=['book', 'water'],
-                               default_index=0)
-        
-    if selected == 'Services':
-        main()
-    elif selected == 'Drinks':
-        drink_menu()
- 
+
+drinks = {
+    'Drinks': ['Water', 'Coke', 'Diet Coke', 'Sprite', 'Iced Tea', 'Lemonade', 'Coffee', 'Tea'],
+    'Alcohol': ['Wine', 'Beer', 'Mojito', 'Whiskey', 'Mixed Drinks', 'Champagne', 'Mimosa', 'Bellini']
+}
+
+def display_drinks():
+    for category, items in drinks.items():
+        st.write(f'<h3 class="box">{category}</h3>', unsafe_allow_html=True)
+        for item in items:
+            st.write("<hr>", unsafe_allow_html=True)
+            st.write(f"""
+                <div class="drink">
+                    <h3>{item}</h3>
+                </div>
+            """, unsafe_allow_html=True)
+            
+    st.write("<h5 class = 'drink'>*Alcohol must be use responsibly*</h5>", unsafe_allow_html=True)        
+            
+            
 def main():
     # ---Title and Header---
     st.markdown(
@@ -178,6 +189,7 @@ def main():
         """,
         unsafe_allow_html=True
     )
+    
     basic_services,enhance,add_ons,wax = st.tabs(["Mani & Pedi", "Nail Enhancement","Add-Ons","Waxing"])
     
     with basic_services:
@@ -189,72 +201,9 @@ def main():
     with wax:
         waxing()
 
-def drink_menu():
-    st.title("Drink Menu")
-# Embed CSS in the app
-    st.markdown(
-        """
-        <style>
-            .drink-container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                gap: 20px;
-                border-radius: 12px;
-            }
-            .drink-item {
-                flex: 0 0 30%; /* Each item takes up 30% of the row */
-                text-align: left;
-                border: 1px solid #ddd;
-                border-radius: 8px;
-                padding: 10px;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                background-color: #f9f9f9;
-                border-radius: 10px;
-            }
-            .drink-item h3 {
-                margin: 10px 0;
-                font-size: 32px;
-                color: #333;
-            }
-            .row-divider {
-                width: 100%;
-                border-top: 1px solid #ddd;
-                margin: 20px 0;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-
-    # Sample drink data
-    menu = {
-            'Drink' : ["Coffee", "Tea", "Diet/Classic", "Water","Sprite"],
-            'Ahcoholic' : ["Red Wine","White Wine", "Beer", "Bellini", "Mimosas",'Charmpagne']
-    }
-
-    # HTML container for the drink items
-    st.markdown('<div class="drink-container">', unsafe_allow_html=True)
-
-
-    # Display the drinks
-    for category, drinks in menu.items():
-        st.write(f'<h2 class="box">{category}</h2>', unsafe_allow_html=True)
-        for drink in drinks:
-            st.markdown(
-                f"""
-                <div class="drink-item">
-                    <h3>{drink}</h3>
-                    </div>
-                    """,
-                    unsafe_allow_html=True,
-                    )
-        st.markdown('<div class="row-divider"></div>', unsafe_allow_html=True)
-            
-
-# Close the container
-st.markdown('</div>', unsafe_allow_html=True)
+    with st.sidebar:
+        display_drinks()
 
     
 if __name__ == '__main__':
-   option_menus()    
+   main()   

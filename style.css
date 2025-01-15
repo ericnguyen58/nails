@@ -4,6 +4,11 @@ h1 {
     font-family: Playwrite België Vlaams Gewest;
     color: #053c28;
 }
+h5 {
+    text-align: center;
+    font-family: Playwrite België Vlaams Gewest;
+    color: #ffffff;
+}
 
 /* Styling for the services list */
 .service-container {
@@ -24,7 +29,12 @@ h1 {
     align-self: center;
     font-family: Playwrite België Vlaams Gewest;
 }
-
+.drink h3 {
+    margin: 0;
+    color: #ffffff;
+    align-self: center;
+    font-family: Playwrite België Vlaams Gewest;
+}
 .service-duration {
     color: gray;
     font-size: 14px;
@@ -87,6 +97,34 @@ div.stTabs button {
     align-items: center;    /* Center vertically */
     height: 100px;          /* Height of the container */
 }
+
+<style>
+    .drink-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .drink-item {
+        flex: 0 0 30%; /* Each item takes up 30% of the row */
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+    }
+    .drink-item h3 {
+        margin: 10px 0;
+        font-size: 18px;
+        color: #333;
+    }
+    .row-divider {
+        width: 100%;
+        border-top: 1px solid #ddd;
+        margin: 20px 0;
+    }
+</style>
 
 
   
