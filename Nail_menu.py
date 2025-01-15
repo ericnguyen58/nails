@@ -115,7 +115,7 @@ def nail_enhancement():
 
     for sub_service, enhance in all_services['Nail Enhancement'].items():
         if sub_service in selected_services:
-            st.write(f'<h2  style="color:#a90000;" class="box">{sub_service}</h2>', unsafe_allow_html=True)
+            st.write(f'<h2 style="color:#a90000;" class="box">{sub_service}</h2>', unsafe_allow_html=True)
             for service, detail in enhance.items():
                 st.write("<hr>", unsafe_allow_html=True)
                 st.write(f"""
