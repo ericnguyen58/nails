@@ -90,7 +90,7 @@ all_services = {
 #`---Manicure---` and `---Pedicure---`
 def basic():
     for sub_service, enhance in all_services['Mani & Pedi'].items():
-        st.write(f'<h2 class="box">{sub_service}</h2>', unsafe_allow_html=True)
+        st.write(f'<h1 class="box">{sub_service}</h1>', unsafe_allow_html=True)
         for service, detail in enhance.items():
             st.write("<hr>", unsafe_allow_html=True)
             st.write(f"""
@@ -107,7 +107,7 @@ def basic():
 
 #`---Nail Enhancement---`
 def nail_enhancement():
-    st.write( '<h2 class="box">Nail Enhancement</h2>',unsafe_allow_html=True)
+    st.write( '<h1 class="box">Nail Enhancement</h1>',unsafe_allow_html=True)
     selected_services = st.multiselect(
         'Select a service',
         ['Full Set', 'Fill', 'Gel-X', 'Dip Powder/SNS', 'Silk Wrap']
@@ -115,7 +115,7 @@ def nail_enhancement():
 
     for sub_service, enhance in all_services['Nail Enhancement'].items():
         if sub_service in selected_services:
-            st.write(f'<h2 class="box">{sub_service}</h2>', unsafe_allow_html=True)
+            st.write(f'<h1 class="box">{sub_service}</h1>', unsafe_allow_html=True)
             for service, detail in enhance.items():
                 st.write("<hr>", unsafe_allow_html=True)
                 st.write(f"""
@@ -131,7 +131,7 @@ def nail_enhancement():
 #`---Add-Ons---`
 def add_ons_services ():
     for sub_service, enhance in all_services['Add-Ons'].items():
-        st.write(f'<h2 class="box">{sub_service}</h2>', unsafe_allow_html=True)
+        st.write(f'<h1 class="box">{sub_service}</h1>', unsafe_allow_html=True)
         for service, detail in enhance.items():
             st.write("<hr>", unsafe_allow_html=True)
             st.write(f"""
@@ -146,7 +146,7 @@ def add_ons_services ():
 #`---Waxing---`
 def waxing():
     for sub_service, enhance in all_services['Waxing'].items():
-        st.write(f'<h2 class="box">{sub_service}</h2>', unsafe_allow_html=True)
+        st.write(f'<h1 class="box">{sub_service}</h1>', unsafe_allow_html=True)
         for service, detail in enhance.items():
             st.write("<hr>", unsafe_allow_html=True)
             st.write(f"""
@@ -166,7 +166,7 @@ drinks = {
 
 def display_drinks():
     for category, items in drinks.items():
-        st.write(f'<h2 class="box">{category}</h2>', unsafe_allow_html=True)
+        st.write(f'<h1 class="box">{category}</h1>', unsafe_allow_html=True)
         for item in items:
             st.write("<hr>", unsafe_allow_html=True)
             st.write(f"""
