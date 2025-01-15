@@ -135,7 +135,7 @@ def add_ons_services ():
         for service, detail in enhance.items():
             st.write("<hr>", unsafe_allow_html=True)
             st.write(f"""
-                <div class="service-container">
+                <div  style="color:#a90000;" class="service-container">
                     <h3>{service}</h3>
                     <h3>{detail[0]}</h3>
                 </div>
