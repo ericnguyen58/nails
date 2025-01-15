@@ -136,7 +136,7 @@ def add_ons_services ():
             st.write("<hr>", unsafe_allow_html=True)
             st.write(f"""
                 <div class="service-container">
-                    <h3">{service}</h3>
+                    <h3>{service}</h3>
                     <h3 >{detail[0]}</h3>
                 </div>
                 <p class="service-duration">{detail[1]}</p>
