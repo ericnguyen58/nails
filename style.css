@@ -2,7 +2,7 @@
 h1 {
     text-align: center;
     font-family: Playwrite België Vlaams Gewest;
-    color: #053c28;
+    color: #a90000;
 }
 h5 {
     text-align: center;
@@ -40,6 +40,7 @@ h2 {
     align-self: center;
     font-family: Playwrite België Vlaams Gewest;
 }
+
 .service-duration {
     color: gray;
     font-size: 14px;
@@ -72,7 +73,7 @@ div.stTabs button {
 /* Welcome Box */
 .box {
     border: 2px solid #F5F4FA; /* Adds a border */
-    color: #cc1815; 
+    color: #a90000; 
     padding: 20px;          /* Adds space inside the box */
     margin-bottom: 20px;    /* Adds space below the box */
     text-align: center;     /* Centers the text */
