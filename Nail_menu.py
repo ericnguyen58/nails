@@ -115,7 +115,7 @@ def nail_enhancement():
 
     for sub_service, enhance in all_services['Nail Enhancement'].items():
         if sub_service in selected_services:
-            st.write(f'<h2 class="box">{sub_service}</h2>', unsafe_allow_html=True)
+            st.write(f'<h2  style="color:#a90000;" class="box">{sub_service}</h2>', unsafe_allow_html=True)
             for service, detail in enhance.items():
                 st.write("<hr>", unsafe_allow_html=True)
                 st.write(f"""
@@ -135,8 +135,8 @@ def add_ons_services ():
         for service, detail in enhance.items():
             st.write("<hr>", unsafe_allow_html=True)
             st.write(f"""
-                <div  style="color:#a90000;" class="service-container">
-                    <h3  style="color:#a90000;">{service}</h3>
+                <div class="service-container">
+                    <h3">{service}</h3>
                     <h3 >{detail[0]}</h3>
                 </div>
                 <p class="service-duration">{detail[1]}</p>
