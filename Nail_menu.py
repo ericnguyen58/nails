@@ -58,7 +58,7 @@ all_services = {
     'Add-Ons': {
                 'Nail Art': {
                             'Per Nail':['$5+','5+ mins'],
-                            'Full Set' :['$25+','30+ mins']
+                    
                             },
                 'Gel Polish': {
                             'Gel Polish':['$15+','15+ mins']
@@ -67,7 +67,7 @@ all_services = {
                             'Nail Repair':['$10+','5+ mins']
                             },
                 'Nail Removal': {
-                            'Nail Removal':['$20','15+ mins']
+                            'Nail Removal':['$10','15+ mins']
                             }
             },
     'Waxing': {
@@ -160,8 +160,8 @@ def waxing():
 
 
 drinks = {
-    'Drinks': ['Water', 'Coke', 'Diet Coke', 'Sprite', 'Iced Tea', 'Lemonade', 'Coffee', 'Tea'],
-    'Alcohol': ['Wine', 'Beer', 'Mojito', 'Whiskey', 'Mixed Drinks', 'Champagne', 'Mimosa', 'Bellini']
+    'Drinks': ['Water', 'Coke', 'Diet Coke', 'Sprite', 'Coffee', 'Tea'],
+    'Alcohol': ['Wine', 'Beer',   'Champagne', 'Mimosa', 'Bellini']
 }
 
 def display_drinks():
