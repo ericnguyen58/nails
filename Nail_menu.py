@@ -64,10 +64,11 @@ all_services = {
                             'Gel Polish':['$15+','15+ mins']
                             },
                 'Nail Repair': {
-                            'Nail Repair':['$10+','5+ mins']
+                            'Nail Repair':['$5+','5+ mins']
                             },
                 'Nail Removal': {
-                            'Nail Removal':['$10','15+ mins']
+                            'Gel Soak-off':['$10','15+ mins'],
+                            'Acrylic Soak-off':['$20','15+ mins']
                             }
             },
     'Waxing': {
